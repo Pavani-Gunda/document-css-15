@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>units task</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        
+        }
+        .box-px{
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+
+        }
+        .parent-percent{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        
+        }
+        .child-parent{
+            width: 50%;
+            height: 200px;
+            border: 1px solid red;
+            background-color: azure;
+
+
+        }
+        html .rem-paragraph{
+            font-size: 36px;
+        }
+        .rem-paragraph{
+         font-size: 2rem;
+        }
+        .parent-em{
+            font-size: 16px;
+        }
+        .child-em{
+            font-size: 1.5em;
+        }
+        .box-vw{
+            width: 50vw;
+            border: 1px solid black;
+        }
+        .box-vh{
+            height:25vh;
+            border: 1px solid black;
+        }
+        .square-vmin{
+            width: 20vmin;
+            height: 20vmin;
+            border: 1px solid black;
+        }
+        .square-vmax{
+             width: 20vmax;
+             height: 20vmax;
+             border: 1px solid black;
+
+        }
+        .parent-relative{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            position: relative;
+        }
+        .child-absolute{
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+        .parent-font{
+         width: 200px;
+         height: 100px;
+            border: 1px solid black;
+            font-size: 20px;
+            background-color: antiquewhite;
+        }
+        .child-font{
+        
+            border: 1px solid black;
+            font-size: inherit;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>task-1</h1>
+    <div class="box-px">box with px units</div>
+    <hr/>
+    <h1>task-2</h1>
+    <div class="parent-percent">
+        <div class="child-parent">box with % units</div>
+    </div>
+    <hr/>
+    <h1>task-3</h1>
+    <p class="rem-paragraph">this paragraph uses rem units</p>
+    <hr/>
+    <h1>task-4</h1>
+    <div class="parent-em">
+        <div class="child-em">this paragraph uses em units</div>
+    </div>
+    <hr/>
+    <h1>task-5</h1>
+    <div class="box-vw">box with vw units</div>
+    <hr/>
+    <h1>task-6</h1>
+    <div class="box-vh">box with vh units</div>
+    <hr/>
+    <h1>task-7</h1>
+    <div class="square-vmin">sqaure with vmin units</div>
+    <hr/>
+    <h1>task-8</h1>
+    <div class="square-vmax">sqaure with vmax units</div>
+    <hr/>
+    <h1>task-9</h1>
+    <div class="parent-relative">
+        <div class="child-absolute">child box</div>
+    </div>
+    <hr/>
+    <h1>task-10</h1>
+    <div class="parent-font">
+        parent text 
+        <div class="child-font">child text(inherits font size)</div>
+    </div>
+</html>
